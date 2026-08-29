@@ -1,0 +1,7 @@
+1. The core operations used in this code include intersections to find matching tags between products and customer preferences, and loops to iterate through the list of products and preferences to
+count intersections and matches. Converting the products and preferences into a set and intersecting them is key to finding matches between them. Loops are important in order to turn the product list 
+into a set by changing each group of tags connected to a product into a set belonging to that product. Without this operation, finding an intersection is not possible. A loop is also necessary to 
+compare each tag to the customer preferences in order to find matches. 
+2. As the size of the list of products increases, the data structure and how we search the data would have to be more efficient. With the current setup, the search for matches would take longer with a larger database. 
+Finding a way to minimize that time the comparison is made would make the whole process run smoother. With a larger amount of products, the amount of tags may also have to increase to get more specific answers for the customer. 
+If the customer only inputs 1 or 2 preferences that could be over 100 products. One way to mitigate this would be to sort the list of matches to show the product with the most matches at the top of the list. 
